@@ -27,7 +27,7 @@
     <title>Finix - Loans and Funding Agency HTML Template</title>
 </head>
 
-<body style="overflow-x: hidden">
+<body style="overflow-x: hidden"  oncontextmenu="return false;">
     <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow">
         <div class="container">
             <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="" /></a>
@@ -407,6 +407,22 @@
             wrap: true,
             touch: true,
         })
+    </script>
+    <script>
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+        }
     </script>
 </body>
 
